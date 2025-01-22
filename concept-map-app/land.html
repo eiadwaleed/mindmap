@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Concept Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            animation: fadeInUp 1.5s ease;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1rem;
+        }
+        .cta-button {
+            background: #ff6b6b;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 50px;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background: #e55039;
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin-top: 40px;
+            animation: fadeIn 2s ease;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Interactive Concept Map</h1>
+        <p class="subtitle">Explore, Connect, and Learn Like Never Before</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Concept Map</h3>
+                <p>Create and navigate interactive maps of knowledge visually.</p>
+            </div>
+            <div class="feature">
+                <h3>Community Based</h3>
+                <p>Connect with learners and share your maps and ideas.</p>
+            </div>
+            <div class="feature">
+                <h3>AI-Powered</h3>
+                <p>Generate concept maps automatically with intelligent suggestions.</p>
+            </div>
+            <div class="feature">
+                <h3>Hyperlinked Navigation</h3>
+                <p>Click nodes to dive deeper or view related resources and notes.</p>
+            </div>
+        </div>
+        <button class="cta-button" onclick="window.open('https://forms.gle/your-google-form-url', '_blank')">Support the Journey</button>
+        <iframe src="https://y-eiadwaleed-eiadwaleeds-projects.vercel.app/" title="Interactive Concept Map"></iframe>
+    </div>
+</body>
+</html>

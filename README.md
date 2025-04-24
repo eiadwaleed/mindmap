@@ -66,7 +66,7 @@ Please make sure to update tests as appropriate and follow our code of conduct.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Support
 
@@ -75,5 +75,4 @@ If you encounter any issues or have questions, please contact us at eiad@uni.min
 ## Acknowledgments
 
 - Thanks to all contributors who have helped shape this project
-- Special thanks to our active community members
 - Built with modern web technologies and lots of ❤️
